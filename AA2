@@ -118,7 +118,7 @@ while True:
     if bullet.colliderect(enemy):
       enemy.y=random.choice([random.randint(-250,0),random.randint(600,840)])
       enemy.x=random.choice([random.randint(-250,0),random.randint(400,600)])
-      -----Write your code here-----
+     score=score+1
     print("Now you killed ",score,"enemies")
     screen.blit(enemy_image,enemy)
   
@@ -133,8 +133,7 @@ while True:
   
   screen.blit(newimg , player)
   
-  #scoretext=game_font.render("Score : " + str(score),False,(200,200,200))
-  #screen.blit(scoretext,(10,10))
+ 
   
   pygame.display.update()
   clock.tick(30)
